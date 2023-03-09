@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Examen2 {
 public static void main(String[] args){
 	
-		String [] nombre = {"Fransisco", "Mateo", "Andrea", "Leo", "Maria","Carla","Diego","Sara","Lucas","Daniela"};
+	String [] nombre = {"Fransisco", "Mateo", "Andrea", "Leo", "Maria","Carla","Diego","Sara","Lucas","Daniela"};
 		
 		Random random = new Random();
 		personaje[] personalist = new personaje[10];
@@ -96,7 +96,7 @@ public static void main(String[] args){
 		    
 			//pregunta 3 - ¿Es inteligente?
 			case 3:
-		    System.out.println("\nlos siguientes personajes son inteligentes:");
+		    	System.out.println("\nlos siguientes personajes son inteligentes:");
 			for (int j=0; j<=personalist.length-1; j++){
 				if(personalist[j].getesInteligente() == personalist[desconocido].getesInteligente() && personalist[j].getnombre() != null){
 				System.out.println(j + " - " + personalist[j].getnombre());
@@ -108,10 +108,10 @@ public static void main(String[] args){
 		    
 			//pregunta 4
 			case 4:
-			System.out.println("\nlos siguientes personajes estan felices");
+			System.out.println("\nlos siguientes personajes estan felices:");
 			for (int j=0; j<=personalist.length-1; j++){
 				if(personalist[j].getestaFeliz() == personalist[desconocido].getestaFeliz() && personalist[j].getnombre() != null){
-					System.out.println(j + " - " + personalist[j].getnombre());
+				System.out.println(j + " - " + personalist[j].getnombre());
 				} else{
 				personalist[j].eliminarnombre();
 				}
@@ -124,7 +124,7 @@ public static void main(String[] args){
 			int adivinaquien = Integer.parseInt(entrada.next());
 			if(adivinaquien == desconocido){
 				System.out.println("Es correcto!");
-				}else{
+				} else{
 				System.out.println("Es incorrecto.");
 				}
 			}
